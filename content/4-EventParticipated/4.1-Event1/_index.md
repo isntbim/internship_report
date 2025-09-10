@@ -1,7 +1,8 @@
+<!--- change date to make it appear -->
 ---
 title: "Event 1"
-date: "`r Sys.Date()`"
-weight: 1
+date: "2099-09-10T14:24:43+07:00" 
+weight: 2
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
