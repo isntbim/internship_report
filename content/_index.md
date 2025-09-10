@@ -1,36 +1,44 @@
 ---
-title : "Session Management"
-date :  "2025-09-09" 
-weight : 1 
-chapter : false
+title: "Internship Report"
+date: "`r Sys.Date()`"
+weight: 1
+chapter: false
 ---
+
+    
 # Internship Report
 
+{{% notice warning %}}
+⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
+{{% /notice %}}
+
 ### Student Information:
-  **Full Name:** Nguyen Van A
+&emsp; **Full Name:** Nguyen Van A
 
-  **Phone Number:** 0989888999
+&emsp; **Phone Number:** 0989888999 
 
-  **Email:** Anguyenvan@gmail.com
+&emsp; **Email:** Anguyenvan@gmail.com
 
-  **University:** Ho Chi Minh City University of Technology and Education
+&emsp; **University:** Ho Chi Minh City University of Technology and Education
 
-  **Major:** Information Technology
+&emsp; **Major:** Information Technology
 
-  **Class:** AWS082025
+&emsp; **Class:** AWS082025
 
-  **Internship Company:** Amazon Web Services Vietnam Co., Ltd.
+&emsp; **Internship Company:** Amazon Web Services Vietnam Co., Ltd.
 
-  **Internship Position:** FCJ Cloud Intern
+&emsp; **Internship Position:** FCJ Cloud Intern
 
-  **Internship Duration:** From 12/08/2025 to 12/11/2025
+&emsp; **Internship Duration:** From 12/08/2025 to 12/11/2025
 
-![ConnectPrivate](/images/arc-log.png) 
+![Your profile picture](/images/avatar.png)
 
-### Content
- 1. [Introduction ](1-introduce/)
- 2. [Preparation](2-prerequiste/)
- 3. [Connect to EC2 instance](3-accessibilitytoinstances/)
- 4. [Manage session logs](4-s3log/)
- 5. [Port Forwarding](5-Portfwd/)
- 6. [Clean up resources](6-cleanup/)
+### Report Content
+
+1.  [Worklog](1-Worklog/)
+2.  [Proposal](2-Proposal/)
+3.  [Translated Blogs](3-BlogsTranslated/)
+4.  [Events Participated](4-EventParticipated/)
+5.  [Workshop](5-Workshop/)
+6.  [Self-evaluation](6-Self-evaluation/)
+7.  [Sharing and Feedback](7-Feedback/)
