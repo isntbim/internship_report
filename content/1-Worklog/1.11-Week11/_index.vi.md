@@ -13,7 +13,7 @@ pre: " <b> 1.11. </b> "
 * Kết nối, làm quen với các thành viên trong First Cloud Journey.
 * Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
 
-### Các công việc cần triển khai trong tuần này:
+### Các công việc thực hiện trong tuần:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
 | 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |

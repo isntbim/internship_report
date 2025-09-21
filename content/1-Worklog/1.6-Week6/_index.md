@@ -13,7 +13,7 @@ pre: " <b> 1.6. </b> "
 * Connect and get acquainted with members of First Cloud Journey.
 * Understand basic AWS services, how to use the console & CLI.
 
-### Tasks to be carried out this week:
+### Tasks carried out this week:
 | Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
 | 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |

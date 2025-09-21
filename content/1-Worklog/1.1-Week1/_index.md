@@ -1,6 +1,6 @@
 ---
 title: "Week 1 Worklog"
-date: "2025-09-10T14:24:43+07:00"
+date: "`r Sys.Date()`"
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
@@ -14,7 +14,7 @@ pre: " <b> 1.1. </b> "
 * Learn to write worklog and working handle workshop.
 * Understand basic AWS services, how to use the console & CLI.
 
-### Tasks to be carried out this week:
+### Tasks carried out this week:
 | Day | Task                                                                                                                                                                                                                                                                      | Start Date | Completion Date | Reference Material                                                                                                                                     |
 | --- |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ---------- |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                                                                                      | 09/08/2025 | 09/08/2025      | Policies: <br> <https://policies.fcjuni.com/>                                                                                                          |

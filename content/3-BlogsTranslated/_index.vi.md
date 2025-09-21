@@ -1,6 +1,6 @@
 ---
 title: "Các bài blogs đã dịch"
-date: "`r Sys.Date()`"
+date: "9999-12-31"
 weight: 3
 chapter: false
 pre: " <b> 3. </b> "

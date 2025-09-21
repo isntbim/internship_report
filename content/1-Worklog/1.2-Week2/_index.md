@@ -1,6 +1,6 @@
 ---
 title: "Week 2 Worklog"
-date: "2025-09-15"
+date: "`r Sys.Date()`"
 weight: 1
 chapter: false
 pre: " <b> 1.2. </b> "
@@ -10,46 +10,45 @@ pre: " <b> 1.2. </b> "
 
 ### Week 2 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Define and scope the first typing game project (core features, microservice boundaries, future matchmaking).
+* Establish team foundation: shared repo, initial backlog, ER diagrams, tech stack, ownership.  
+* Standardize WPM and accuracy formulas.  
+* Prototype FastAPI service: text generation, sentence assembly, chat; validate Bedrock integration path.  
+* Set up AWS Budgets with alerting.  
+* Gain working proficiency: Lambda (function URL), VPC (subnets, gateways, peering vs transit), Flow Logs, load balancing concepts.  
+* Provision Amazon RDS; design schema and seed dataset for text retrieval.  
+* Refactor text service to DB-backed retrieval; benchmark vs prior API method.  
+* Introduce early operational practices: role assignment, benchmarking, monitoring for scalability.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks carried out this week:
+| Day | Task                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Start Date | Completion Date | Reference Material                                                                                                                                                                                                                                             |
+|-----|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2   | - Hold a team brainstorming session to define and prioritize concepts for the first project <br>&emsp; + Transfer our brainstorming notes from the project canvas into an initial task backlog on the project management board <br>&emsp; + Research and document the specific algorithms for calculating WPM and accuracy to ensure consistency <br>&emsp; +Create the shared code repository and establish the basic project structure for the chosen languages and microservices <br>&emsp; + Refine the sketched ER diagrams and begin drafting the initial database schemas <br>&emsp; + Formally assign lead responsibility for each microservice to individual team members to streamline development <br>                                                                                                                                                                                                                                                                                                                                                                                 | 09/15/2025 | 09/15/2025      |                                                                                                                                                                                                                                                                |
+| 3   | - Set up AWS Budgets: <br>&emsp; + Review budget types (Cost, Usage, RI, etc.) <br>&emsp; + Define monthly cost threshold <br>&emsp; + Configure budget in the AWS console <br>&emsp; + Set up email/SNS alerts <br/>  - Create a web app using AWS Lambda: <br>&emsp; + Learn Lambda and function URL fundamentals <br>&emsp; + Code a simple "Hello World" function <br>&emsp; + Configure the function and its IAM role <br>&emsp; + Enable and test the function URL endpoint <br/> - Learn and test FastAPI for microservices: <br>&emsp; + Go through the official FastAPI tutorial <br>&emsp; + Set up a local development environment <br>&emsp; + Create a proof-of-concept API <br>&emsp; + Implement and test basic endpoints using Swagger UI                                                                                                                                                                                                                                                                                                                                         | 09/16/2025 | 09/16/2025      | AWS Lambda:<br/> <https://ap-southeast-1.console.aws.amazon.com/lambda> <br/> AWS Budgets: <br/><https://us-east-1.console.aws.amazon.com/costmanagement/> <br/> FastAPI: <br/> <https://www.coursera.org/learn/packt-mastering-rest-apis-with-fastapi-1xeea/> |
+| 4   | - Exploring the Fundamentals of AWS Networking and Security <br>&emsp; + Review the core concept of an Amazon VPC (Virtual Private Cloud) as an isolated section of the AWS cloud <br>&emsp; + Understand the purpose of subnets, and the distinction between public and private subnets for structuring a network <br>&emsp; + Learn the roles of an Internet Gateway for providing internet access to public subnets and a NAT Gateway for allowing private subnets to access the internet securely <br>&emsp; + Explore VPC Flow Logs as a tool for monitoring and troubleshooting network traffic within your VPC <br>&emsp; + Compare methods for connecting an on-premise data center to AWS: Site-to-Site VPN for encrypted connections over the internet and Direct Connect for a dedicated, private connection <br>&emsp; + Understand the use cases for VPC Peering (connecting two VPCs directly) versus a Transit Gateway <br>&emsp; + Grasp the overall purpose of Elastic Load Balancing (ELB) to distribute application traffic across multiple servers for high availability <br> | 09/17/2025 | 09/17/2025      | Module 02-(01 to 03): <br> <https://www.youtube.com/watch?v=O9Ac_vGHquM> <br> <https://www.youtube.com/watch?v=BPuD1l2hEQ4> <br> <https://www.youtube.com/watch?v=CXU8D3kyxIc>                                                                                 |
+| 5   | - Explore the Amazon Bedrock playground: <br>&emsp; + Review the available foundation models (e.g., Claude, Titan) <br>&emsp; + Select a model for text generation <br>&emsp; + Experiment with different prompts and parameters  <br>&emsp; + Generate and analyze a sample response <br/> - Prototype the designated microservice: <br>&emsp; + Structured the service's logic and integrated multiple APIs for generating text <br>&emsp; + Implemented the core functions for creating random sentences and managing a chat feature <br>&emsp; + Reviewed the initial build to identify limitations and outline next steps for improvement <br>&emsp; + Validate our technical approach                                                                                                                                                                                                                                                                                                                                                                                                       | 09/18/2025 | 09/18/2025      | Amazon Bedrock:<br/><https://ap-southeast-1.console.aws.amazon.com/bedrock> <br/>                                                                                                                                                                              |
+| 6   | - Launch and Configure an Amazon RDS Database: <br>&emsp; + Review and select a suitable database engine for the project's needs <br>&emsp; + Configure the core instance settings, including credentials, VPC, and security group access rules <br>&emsp; + Launch the database, monitor its creation, and securely record the connection endpoint <br> - Prototype a Database-Driven TextService: <br>&emsp; + Design a simple database schema with tables for words and sentences to store text content <br>&emsp; + Create a one-time script to populate the new RDS database with an initial dataset <br>&emsp; + Refactor the TextService to fetch data from the database instead of external APIs and benchmark the performance improvement <br> &emsp; + Run a simple benchmark to compare the response times between the old API-based method and the new database query method                                                                                                                                                                                                          | 09/19/2025 | 09/19/2025      | Aurora and RDS: <br/><https://ap-southeast-1.console.aws.amazon.com/rds>                                                                                                                                                                                       |
 
 
 ### Week 2 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Defined first typing game scope:
+  * Core features
+  * Microservice boundaries
+  * Backlog seeded
+  * Ownership assigned.
+  
+* Standard WPM and accuracy formulas researched and documented.
+* Shared repository initialized with baseline multi-language structure.
+* ER diagrams refined and initial relational schema drafted.
+* FastAPI prototype delivered (text generation, sentence assembly, chat) and verified via Swagger UI.
+* AWS Budgets configured with monthly threshold and alerting.
+* Core AWS foundations learned: 
+  * Lambda (function URL) 
+  * VPC (subnets, IGW, NAT, Flow Logs)
+  * Peering vs transit gateway
+  * Load balancing concepts
+* Amazon Bedrock models explored; candidate model and prompt approach validated.
+* RDS instance launched, schema created, seed dataset loaded.
+* TextService refactored to DB-backed retrieval with initial performance improvement benchmarked.
+* Early operational practices introduced: role ownership, benchmarking focus, scalability considerations.
