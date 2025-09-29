@@ -1,6 +1,6 @@
 ---
 title: "Week 3 Worklog"
-date: "2025-09-22"
+date: "'r Sys.Date() '"
 weight: 1
 chapter: false
 pre: " <b> 1.3. </b> "
@@ -10,46 +10,47 @@ pre: " <b> 1.3. </b> "
 
 ### Week 3 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Complete foundational AWS hands-on labs (Site-to-Site VPN, EC2 fundamentals).
+* Progress through and finish all four modules of the AWS Cloud Technical Essentials course.
+* Strengthen practical usage of AWS Console and CLI (configuration, key management, region/service discovery).
+* Collaborate with product/design to review and document TypeRush Figma UI/UX for future implementation.
+* Evaluate storage options and decide on a scalable NoSQL approach for TextService data.
+* Prototype and integrate MongoDB (environment setup, seeding, service refactor, validation).
+* Build effective communication cadence with First Cloud Journey team members.
 
 ### Tasks carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Day | Task                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Start Date | Completion Date | Reference Material                                                                                                         |
+| --- |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ---------- |-----------------|----------------------------------------------------------------------------------------------------------------------------|
+| 2   | - **Lab 03:** AWS Site-to-Site VPN: <br>&emsp; + Create a complete Site-to-Site VPN environment, including a new VPC, an EC2 instance to act as a customer gateway, a Virtual Private Gateway, and the VPN connection itself. <br>&emsp; + Configure and test the VPN tunnel connectivity. <br> <br> - **Lab 04:** Amazon EC2 Fundamentals: <br>&emsp; + Launch and connect to both Microsoft Windows Server and Amazon Linux EC2 instances. <br>&emsp; + Deploy a sample "AWS User Management" application on both Windows and Linux environments to practice basic CRUD operations. <br>&emsp; + Explore core EC2 features like modifying instance types, managing EBS snapshots, and creating custom AMIs.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | 09/22/2025 | 09/22/2025      | VPN Lab (Lab 03): <br> <https://000003.awsstudygroup.com/> <br> EC2 Lab (Lab 04): <br> <https://000004.awsstudygroup.com/> |
+| 3   | - Getting start with AWS Cloud Technical Essentials course, covering 2 modules: <br>&emsp; + **Module 1:** Cloud Foundations & IAM <br>&emsp;&emsp; - Define cloud computing and its value proposition. <br>&emsp;&emsp; - Differentiate between on-premises and cloud workloads. <br>&emsp;&emsp; - Create an AWS account and review different methods for interacting with AWS services. <br>&emsp;&emsp; - Describe the AWS Global Infrastructure, including Regions and Availability Zones. <br>&emsp;&emsp; - Learn and apply best practices for AWS Identity and Access Management (IAM). <br>&emsp; + **Module 2**: Compute & Networking <br>&emsp;&emsp; - Review the basic components of Amazon EC2 architecture. <br>&emsp;&emsp; - Differentiate between containers and virtual machines. <br>&emsp;&emsp; - Discover the features and advantages of serverless technologies. <br>&emsp;&emsp; - Learn basic networking concepts and the features of Amazon Virtual Private Cloud (VPC). <br>&emsp;&emsp; - Create a VPC.                                                                                                                                                                                                                                                                                                                                                                                          | 09/23/2025 | 09/23/2025      | AWS Cloud Technical Essentials: <br> <https://www.coursera.org/learn/aws-cloud-technical-essentials>                       |
+| 4   | - Collaborate and Document Figma Design for TypeRush UI/UX: <br>&emsp; + Participate in a dedicated cross-functional design review meeting to comprehensively examine the latest Figma mockups provided by the UI/UX team. <br>&emsp; + Systematically analyze each key screen (e.g., login/registration, main game interface, post-game score summary, settings menu) to grasp the visual hierarchy, component states, and intended user interactions. <br>&emsp; + Compile a list of initial technical feasibility questions and potential UI implementation considerations to facilitate further discussion and alignment between design and engineering. <br>&emsp; + Begin translating key design elements into preliminary front-end component requirements or user stories, setting the groundwork for future development sprints. <br> <br> - Discuss Text Service Storage with Team Lead & Confirm NoSQL Choice: <br>&emsp; + Engage in a focused discussion with the team leader regarding the optimal database solution for the TextService (e.g., for storing words and sentences). <br>&emsp; + Present the pros and cons of relational (SQL) vs. non-relational (NoSQL) options in the context of our data structure and anticipated access patterns. <br>&emsp; + Confirm the decision to proceed with a NoSQL database as the chosen storage solution due to its flexibility and scalability for text content. | 09/24/2025 | 09/24/2025      |                                                                                  |
+| 5   | - Integrate and Test MongoDB with TextService Prototype: <br>&emsp; + Set up MongoDB Environment: Set up a local instance using Docker. <br>&emsp; + Refactor Data Seeding Script: Modify the population script to insert the words and sentences into MongoDB collections as documents. <br>&emsp; + Rewrite Service Logic: Update the TextService data retrieval methods to query the MongoDB collections instead of the previous data source. <br>&emsp; + Verify Integration: Thoroughly test the refactored service to confirm that it can successfully connect, write to, and read from the MongoDB database.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | 09/25/2025 | 09/25/2025      |                                                                                  |
+| 6   | - Completing AWS Cloud Technical Essentials course, with 2 final modules: <br>&emsp; + **Module 3:** Storage & Databases <br>&emsp;&emsp; - Differentiate between file, block, and object storage models. <br>&emsp;&emsp; - Explain core Amazon S3 concepts like buckets and objects, then create an S3 bucket. <br>&emsp;&emsp; - Describe the function and use cases of Amazon EBS with EC2. <br>&emsp;&emsp; - Explore the various database services available on AWS. <br>&emsp;&emsp; - Understand the function of Amazon DynamoDB and create a DynamoDB table. <br>&emsp; + **Module 4:** Monitoring & High Availability <br>&emsp;&emsp; - Define the benefits of monitoring and the role of Amazon CloudWatch. <br>&emsp;&emsp; - Understand how to optimize solutions for performance and cost on AWS. <br>&emsp;&emsp; - Describe the function of Elastic Load Balancing (ELB) to route and distribute traffic. <br>&emsp;&emsp; - Differentiate between vertical scaling (scaling up) and horizontal scaling (scaling out). <br>&emsp;&emsp; - Configure a solution for high availability.                                                                                                                                                                                                                                                                                                                        | 09/26/2025 | 09/26/2025      | AWS Cloud Technical Essentials: <br> <https://www.coursera.org/learn/aws-cloud-technical-essentials>                                                                                 |
 
 ### Week 3 Achievements:
+* AWS Infrastructure Labs:
+  * Built full Site-to-Site VPN (VPC, customer gateway EC2, virtual private gateway, tunnel validation)
+  * Executed EC2 fundamentals (Windows & Linux instances, CRUD app deployment, snapshots, custom AMIs)
+  
+* Finished all four modules of AWS Cloud Technical Essentials (Foundations/IAM, Compute & Networking, Storage & Databases, Monitoring & High Availability).
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* AWS Console & CLI Proficiency:
+  * Account setup, credential & config management
+  * Region & service exploration
+  * Key pair handling and resource inspection workflows
 
-* Successfully created and configured an AWS Free Tier account.
+* TypeRush UI/UX Documentation:
+  * Analyzed Figma screens (login, game, score summary, settings) and navigation flows
+  * Captured component states & feasibility questions
+  * Drafted initial user stories / component requirements
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* TextService Storage Architecture:
+  * Evaluated SQL vs NoSQL trade*offs for word/sentence storage
+  * Selected NoSQL approach for flexibility & scalability
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* MongoDB Integration Prototype:
+  * Dockerized local MongoDB environment
+  * Converted seeding script to insert documents
+  * Refactored service data layer to query MongoDB
+  * Validated read/write operations end-to-end
 
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...

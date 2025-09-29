@@ -1,57 +1,54 @@
 ---
 title: "Worklog Tuần 3"
-date: "2025-09-22"
-weight: 3
+date: "'r Sys.Date()'"
+weight: 1
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
 
-
-
 ### Mục tiêu tuần 3:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Hoàn thành các bài lab AWS cơ bản (Site-to-Site VPN, EC2 fundamentals).
+* Tiến hành và hoàn thành tất cả bốn module của khóa học AWS Cloud Technical Essentials.
+* Tăng cường sử dụng thực tế AWS Console và CLI (cấu hình, quản lý key, khám phá region/service).
+* Cộng tác với team product/design để review và tài liệu hóa Figma UI/UX cho TypeRush.
+* Đánh giá các lựa chọn lưu trữ và quyết định phương pháp NoSQL có thể mở rộng cho dữ liệu TextService.
+* Tạo prototype và tích hợp MongoDB (thiết lập môi trường, seeding, refactor service, validation).
+* Xây dựng nhịp độ giao tiếp hiệu quả với các thành viên First Cloud Journey.
 
 ### Các công việc thực hiện trong tuần:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Thứ | Công việc                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ---------- |-----------------|----------------------------------------------------------------------------------------------------------------------------|
+| 2   | - **Lab 03:** AWS Site-to-Site VPN: <br>&emsp; + Tạo môi trường Site-to-Site VPN hoàn chỉnh, bao gồm VPC mới, EC2 instance làm customer gateway, Virtual Private Gateway và kết nối VPN. <br>&emsp; + Cấu hình và kiểm tra kết nối VPN tunnel. <br> <br> - **Lab 04:** Amazon EC2 Fundamentals: <br>&emsp; + Khởi chạy và kết nối đến cả Microsoft Windows Server và Amazon Linux EC2 instances. <br>&emsp; + Deploy ứng dụng "AWS User Management" mẫu trên cả môi trường Windows và Linux để thực hành các thao tác CRUD cơ bản. <br>&emsp; + Khám phá các tính năng EC2 cốt lõi như sửa đổi instance types, quản lý EBS snapshots và tạo custom AMIs.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | 22/09/2025 | 22/09/2025      | VPN Lab (Lab 03): <br> <https://000003.awsstudygroup.com/> <br> EC2 Lab (Lab 04): <br> <https://000004.awsstudygroup.com/> |
+| 3   | - Bắt đầu với khóa học AWS Cloud Technical Essentials, bao gồm 2 modules: <br>&emsp; + **Module 1:** Cloud Foundations & IAM <br>&emsp;&emsp; - Định nghĩa cloud computing và giá trị đề xuất. <br>&emsp;&emsp; - Phân biệt giữa on-premises và cloud workloads. <br>&emsp;&emsp; - Tạo AWS account và xem xét các phương thức tương tác với AWS services. <br>&emsp;&emsp; - Mô tả AWS Global Infrastructure, bao gồm Regions và Availability Zones. <br>&emsp;&emsp; - Học và áp dụng best practices cho AWS Identity and Access Management (IAM). <br>&emsp; + **Module 2:** Compute & Networking <br>&emsp;&emsp; - Xem xét các thành phần cơ bản của kiến trúc Amazon EC2. <br>&emsp;&emsp; - Phân biệt giữa containers và virtual machines. <br>&emsp;&emsp; - Khám phá các tính năng và lợi thế của serverless technologies. <br>&emsp;&emsp; - Học các khái niệm networking cơ bản và tính năng của Amazon Virtual Private Cloud (VPC). <br>&emsp;&emsp; - Tạo một VPC.                                                                                                                                                                                                                                                                              | 23/09/2025 | 23/09/2025      | AWS Cloud Technical Essentials: <br> <https://www.coursera.org/learn/aws-cloud-technical-essentials> |
+| 4   | - Cộng tác và Tài liệu hóa Figma Design cho TypeRush UI/UX: <br>&emsp; + Tham gia cuộc họp design review đa chức năng để kiểm tra toàn diện các Figma mockups mới nhất từ UI/UX team. <br>&emsp; + Phân tích có hệ thống từng màn hình chính (đăng nhập/đăng ký, giao diện game chính, tóm tắt điểm sau game, menu cài đặt) để nắm bắt visual hierarchy, component states và user interactions dự định. <br>&emsp; + Biên soạn danh sách các câu hỏi về tính khả thi kỹ thuật ban đầu và cân nhắc UI implementation để tạo điều kiện thảo luận và căn chỉnh giữa design và engineering. <br>&emsp; + Bắt đầu dịch các design elements chính thành yêu cầu front-end component sơ bộ hoặc user stories, đặt nền móng cho các development sprints tương lai. <br> <br> - Thảo luận Text Service Storage với Team Lead & Xác nhận lựa chọn NoSQL: <br>&emsp; + Tham gia thảo luận tập trung với team leader về giải pháp database tối ưu cho TextService (lưu trữ từ và câu). <br>&emsp; + Trình bày ưu nhược điểm của các lựa chọn relational (SQL) vs non-relational (NoSQL) trong bối cảnh cấu trúc dữ liệu và access patterns dự kiến. <br>&emsp; + Xác nhận quyết định tiến hành với NoSQL database do tính linh hoạt và khả năng mở rộng cho text content. | 24/09/2025 | 24/09/2025      |                                                                                  |
+| 5   | - Tích hợp và Kiểm thử MongoDB với TextService Prototype: <br>&emsp; + Thiết lập MongoDB Environment: Thiết lập local instance bằng Docker. <br>&emsp; + Refactor Data Seeding Script: Sửa đổi population script để insert từ và câu vào MongoDB collections dưới dạng documents. <br>&emsp; + Viết lại Service Logic: Cập nhật TextService data retrieval methods để query MongoDB collections thay vì nguồn dữ liệu trước đó. <br>&emsp; + Xác minh Integration: Kiểm thử kỹ lưỡng refactored service để xác nhận có thể kết nối, ghi và đọc từ MongoDB database thành công.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | 25/09/2025 | 25/09/2025      |                                                                                  |
+| 6   | - Hoàn thành khóa học AWS Cloud Technical Essentials, với 2 modules cuối: <br>&emsp; + **Module 3:** Storage & Databases <br>&emsp;&emsp; - Phân biệt giữa các mô hình file, block và object storage. <br>&emsp;&emsp; - Giải thích các khái niệm Amazon S3 cốt lõi như buckets và objects, sau đó tạo S3 bucket. <br>&emsp;&emsp; - Mô tả chức năng và use cases của Amazon EBS với EC2. <br>&emsp;&emsp; - Khám phá các database services khác nhau trên AWS. <br>&emsp;&emsp; - Hiểu chức năng của Amazon DynamoDB và tạo DynamoDB table. <br>&emsp; + **Module 4:** Monitoring & High Availability <br>&emsp;&emsp; - Định nghĩa lợi ích của monitoring và vai trò của Amazon CloudWatch. <br>&emsp;&emsp; - Hiểu cách tối ưu hóa solutions cho performance và cost trên AWS. <br>&emsp;&emsp; - Mô tả chức năng của Elastic Load Balancing (ELB) để route và distribute traffic. <br>&emsp;&emsp; - Phân biệt giữa vertical scaling (scaling up) và horizontal scaling (scaling out). <br>&emsp;&emsp; - Cấu hình solution cho high availability.                                                                                                                                                                                                       | 26/09/2025 | 26/09/2025      | AWS Cloud Technical Essentials: <br> <https://www.coursera.org/learn/aws-cloud-technical-essentials> |
 
 ### Kết quả đạt được tuần 3:
+* AWS Infrastructure Labs:
+    * Xây dựng Site-to-Site VPN hoàn chỉnh (VPC, customer gateway EC2, virtual private gateway, xác thực tunnel)
+    * Thực hiện EC2 fundamentals (Windows & Linux instances, deploy CRUD app, snapshots, custom AMIs)
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Hoàn thành khóa AWS Cloud Technical Essentials (Foundations/IAM, Compute & Networking, Storage & Databases, Monitoring & High Availability).
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Thành thạo AWS Console & CLI:
+    * Thiết lập tài khoản, quản lý credential & config
+    * Khám phá region & service
+    * Xử lý key pair và quy trình kiểm tra tài nguyên
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Tài liệu hóa TypeRush UI/UX:
+    * Phân tích các màn hình Figma (đăng nhập, game, tóm tắt điểm, cài đặt) và luồng điều hướng
+    * Ghi lại component states & các câu hỏi về tính khả thi
+    * Soạn thảo user stories / yêu cầu component ban đầu
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Kiến trúc TextService Storage:
+    * Đánh giá sự đánh đổi SQL vs NoSQL cho việc lưu trữ từ/câu
+    * Chọn phương pháp NoSQL cho tính linh hoạt & khả năng mở rộng
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
+* MongoDB Integration Prototype:
+    * Môi trường MongoDB local được đóng gói bằng Docker
+    * Chuyển đổi seeding script để insert documents
+    * Refactor service data layer để query MongoDB
+    * Xác thực các thao tác đọc/ghi end-to-end
 

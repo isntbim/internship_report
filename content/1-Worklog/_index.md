@@ -11,11 +11,11 @@ pre: " <b> 1. </b> "
 **Week 1:** [Getting acquainted with the team and getting familiar with the basic of AWS](1.1-week1/)
 
 **Week 2:** [Not yet](1.2-week2/)
-<!---
+
 **Week 3:** [Not yet](1.3-week3/)
 
 **Week 4:** [Not yet](1.4-week4/)
-
+<!--
 **Week 5:** [Not yet](1.5-week5/)
 
 **Week 6:** [Not yet](1.6-week6/)
