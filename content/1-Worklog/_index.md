@@ -8,11 +8,11 @@ pre: " <b> 1. </b> "
 
 
 
-**Week 1:** [Getting acquainted with the team and getting familiar with the basic of AWS](1.1-week1/)
+**Week 1:** [Getting acquainted with the team and mastering AWS basics](1.1-week1/)
 
-**Week 2:** [Not yet](1.2-week2/)
+**Week 2:** [Typing game project scoping, AWS microservices, and operational foundations](1.2-week2/)
 
-**Week 3:** [Not yet](1.3-week3/)
+**Week 3:** [AWS hands-on labs, UI/UX documentation, and NoSQL integration for project 1](1.3-week3/)
 
 **Week 4:** [Not yet](1.4-week4/)
 <!--

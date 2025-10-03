@@ -10,12 +10,12 @@ pre: " <b> 1. </b> "
 
 **Tuần 1:** [Làm quen với nhóm và những điều cơ bản của AWS](1.1-week1/)
 
-**Tuần 2:** [Chưa](1.2-week2/)
+**Tuần 2:** [Phạm vi dự án trò chơi gõ phím, microservices & nền tảng vận hành](1.2-week2/)
 
-**Tuần 3:** [Chưa](1.3-week3/)
+**Tuần 3:** [Lab AWS, tài liệu hóa UI/UX TypeRush & tích hợp NoSQL cho project 1](1.3-week3/)
 
 **Tuần 4:** [Chưa](1.4-week4/)
-
+<!--
 **Tuần 5:** [Chưa](1.5-week5/)
 
 **Tuần 6:** [Chưa](1.6-week6/)
@@ -31,3 +31,4 @@ pre: " <b> 1. </b> "
 **Tuần 11:** [Chưa](1.11-week11/)
 
 **Tuần 12:** [Chưa](1.12-week12/)
+-->
