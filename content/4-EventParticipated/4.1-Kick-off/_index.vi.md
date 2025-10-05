@@ -3,7 +3,7 @@ title: "Kick-off AWS FCJ Workforce - FPTU OJT FALL 2025"
 date: 2025-09-10T16:16:42+07:00
 weight: 1
 chapter: false
-pre: " <b> 4.0. </b> "
+pre: " <b> 4.1. </b> "
 ---
 
 # Bài thu hoạch

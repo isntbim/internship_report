@@ -14,7 +14,7 @@ pre: " <b> 1. </b> "
 
 **Tuần 3:** [Lab AWS, tài liệu hóa UI/UX TypeRush & tích hợp NoSQL cho project 1](1.3-week3/)
 
-**Tuần 4:** [Chưa](1.4-week4/)
+**Tuần 4:** [RDS, Auto Scaling, CloudWatch, Route 53, CLI, CI/CD, Docker, Serverless, Security Hub](1.4-Week4/)
 <!--
 **Tuần 5:** [Chưa](1.5-week5/)
 

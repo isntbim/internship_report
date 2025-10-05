@@ -8,13 +8,14 @@ pre: " <b> 1. </b> "
 
 
 
-**Week 1:** [Getting acquainted with the team and mastering AWS basics](1.1-week1/)
+**Week 1:** [Getting acquainted with the team and mastering AWS basics](1.1-Week1/)
 
-**Week 2:** [Typing game project scoping, AWS microservices, and operational foundations](1.2-week2/)
+**Week 2:** [Typing game project scoping, AWS microservices, and operational foundations](1.2-Week2/)
 
-**Week 3:** [AWS hands-on labs, UI/UX documentation, and NoSQL integration for project 1](1.3-week3/)
+**Week 3:** [AWS hands-on labs, UI/UX documentation, and NoSQL integration for project 1](1.3-Week3/)
 
-**Week 4:** [Not yet](1.4-week4/)
+**Week 4:** [RDS, Auto Scaling, CloudWatch, Route 53, CLI, CI/CD, Docker, Serverless, Security Hub](1.4-Week4/)
+
 <!--
 **Week 5:** [Not yet](1.5-week5/)
 
@@ -32,4 +33,4 @@ pre: " <b> 1. </b> "
 
 **Week 12:** [Not yet](1.12-week12/)
 
---->
+-->
