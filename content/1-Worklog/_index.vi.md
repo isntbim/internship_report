@@ -15,9 +15,9 @@ pre: " <b> 1. </b> "
 **Tuần 3:** [Lab AWS, tài liệu hóa UI/UX TypeRush & tích hợp NoSQL cho project 1](1.3-week3/)
 
 **Tuần 4:** [RDS, Auto Scaling, CloudWatch, Route 53, CLI, CI/CD, Docker, Serverless, Security Hub](1.4-Week4/)
-<!--
-**Tuần 5:** [Chưa](1.5-week5/)
 
+**Tuần 5:** [Từ mạng đến triển khai: VPC Peering, Transit Gateway, WordPress, Lambda Cost Optimization, CI/CD, Storage Gateway, FSx & WAF](1.5-week5/)
+<!--
 **Tuần 6:** [Chưa](1.6-week6/)
 
 **Tuần 7:** [Chưa](1.7-week7/)
