@@ -19,7 +19,7 @@ pre: " <b> 4.1. </b> "
 ### Speakers
 
 - **Nguyen Gia Hung** – Head of Solutions Architect, AWS Vietnam
-- **Do Huy Thang** – DevOps Lead, VNG
+- **Do Huy Thang** – DevOps Lead, VNG 
 - **Doanh Doan Hieu Nghi** – GenAI Engineer, Renova
 - **Bui Ho Linh Nhi** – AI Engineer, SoftwareOne
 - **Pham Nguyen Hai Anh** – Cloud Engineer, G-Asia Pacific

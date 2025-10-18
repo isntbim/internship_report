@@ -89,6 +89,18 @@
                 href="http://localhost:1313/internship_report/vi/5-workshop/5.4-s3-onprem/5.4.1-prepare/"
                 />
   </url><url>
+    <loc>http://localhost:1313/internship_report/vi/4-eventparticipated/4.2-event2/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/internship_report/4-eventparticipated/4.2-event2/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/internship_report/vi/4-eventparticipated/4.2-event2/"
+                />
+  </url><url>
     <loc>http://localhost:1313/internship_report/vi/5-workshop/5.1-workshop-overview/</loc>
     <xhtml:link
                 rel="alternate"
@@ -99,6 +111,18 @@
                 rel="alternate"
                 hreflang="vi"
                 href="http://localhost:1313/internship_report/vi/5-workshop/5.1-workshop-overview/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/internship_report/vi/4-eventparticipated/4.3-event3/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/internship_report/4-eventparticipated/4.3-event3/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/internship_report/vi/4-eventparticipated/4.3-event3/"
                 />
   </url><url>
     <loc>http://localhost:1313/internship_report/vi/5-workshop/5.3-s3-vpc/5.3.1-create-gwe/</loc>
@@ -246,7 +270,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/internship_report/vi/4-eventparticipated/</loc>
-    <lastmod>2099-09-10T14:24:43+07:00</lastmod>
+    <lastmod>2025-09-10T16:16:42+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"

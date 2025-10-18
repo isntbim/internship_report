@@ -16,12 +16,12 @@ pre: " <b> 4.1. </b> "
 
 ### Diễn giả
 
-- **Nguyễn Gia Hưng** – Trưởng bộ phận Kiến trúc sư giải pháp, AWS Vietnam
-- **Đỗ Huy Thắng** – Trưởng nhóm DevOps, VNG
-- **Danh Hoàng Hiếu Nghị** – Kỹ sư GenAI, Renova
-- **Bùi Hồ Linh Nhi** – Kỹ sư AI, SoftwareOne
-- **Phạm Nguyễn Hải Anh** – Kỹ sư Cloud, G-Asia Pacific
-- **Nguyễn Đồng Thanh Hiệp** – Kỹ sư Cloud chính, G-Asia Pacific
+- **Nguyễn Gia Hưng** – Head of Solutions Architect, AWS Vietnam
+- **Đỗ Huy Thắng** – DevOps Lead, VNG
+- **Danh Hoàng Hiếu Nghị** – GenAI Engineer, Renova
+- **Bùi Hồ Linh Nhi** – AI Engineer, SoftwareOne
+- **Phạm Nguyễn Hải Anh** – Cloud Engineer, G-Asia Pacific
+- **Nguyễn Đồng Thanh Hiệp** – Principal Cloud Engineer, G-Asia Pacific
 
 ### Những điểm nhấn chính
 
@@ -33,11 +33,11 @@ pre: " <b> 4.1. </b> "
 
 #### Hành trình tìm kiếm cơ hội việc làm
 
-- Không ai có con đường dễ dàng khi tìm kiếm việc làm. 
+- Không ai có con đường dễ dàng khi tìm kiếm việc làm.
 - Đó là một chặng đường dài và đầy thử thách, đòi hỏi sự chăm chỉ và khả năng nắm bắt cơ hội.
 #### What awaits me at AWS First Cloud Journey
-- Một cách để kết nối với những người xung quanh và tìm những người bạn đồng hành cùng tôi trong AWS First Cloud Journey và thậm chí là trong cuộc sống. 
-- Rất nhiều thử thách mà tôi cần phải vượt qua để trở thành một phiên bản tốt hơn của chính mình. 
+- Một cách để kết nối với những người xung quanh và tìm những người bạn đồng hành cùng tôi trong AWS First Cloud Journey và thậm chí là trong cuộc sống.
+- Rất nhiều thử thách mà tôi cần phải vượt qua để trở thành một phiên bản tốt hơn của chính mình.
 - Những cơ hội để có kinh nghiệm thực hành nhằm nâng cao hơn nữa khả năng của mình.
 
 ### Bài học đúc kết
