@@ -15,19 +15,6 @@
                 href="http://localhost:1313/internship_report/1-worklog/"
                 />
   </url><url>
-    <loc>http://localhost:1313/internship_report/1-worklog/1.6-week6/</loc>
-    <lastmod>2025-10-13T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="http://localhost:1313/internship_report/vi/1-worklog/1.6-week6/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/internship_report/1-worklog/1.6-week6/"
-                />
-  </url><url>
     <loc>http://localhost:1313/internship_report/4-eventparticipated/4.1-kick-off/</loc>
     <lastmod>2025-09-10T14:24:43+07:00</lastmod>
     <xhtml:link
@@ -195,6 +182,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/internship_report/1-worklog/1.5-week5/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/internship_report/1-worklog/1.6-week6/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/internship_report/vi/1-worklog/1.6-week6/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/internship_report/1-worklog/1.6-week6/"
                 />
   </url><url>
     <loc>http://localhost:1313/internship_report/5-workshop/5.4-s3-onprem/5.4.2-create-interface-enpoint/</loc>
