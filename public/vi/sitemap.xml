@@ -15,17 +15,17 @@
                 href="http://localhost:1313/internship_report/vi/1-worklog/"
                 />
   </url><url>
-    <loc>http://localhost:1313/internship_report/vi/1-worklog/1.6-week6/</loc>
-    <lastmod>2025-10-13T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/internship_report/vi/1-worklog/1.7-week7/</loc>
+    <lastmod>2025-10-20T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/internship_report/1-worklog/1.6-week6/"
+                href="http://localhost:1313/internship_report/1-worklog/1.7-week7/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/internship_report/vi/1-worklog/1.6-week6/"
+                href="http://localhost:1313/internship_report/vi/1-worklog/1.7-week7/"
                 />
   </url><url>
     <loc>http://localhost:1313/internship_report/vi/4-eventparticipated/4.1-kick-off/</loc>
@@ -195,6 +195,30 @@
                 rel="alternate"
                 hreflang="vi"
                 href="http://localhost:1313/internship_report/vi/1-worklog/1.5-week5/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/internship_report/vi/1-worklog/1.6-week6/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/internship_report/1-worklog/1.6-week6/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/internship_report/vi/1-worklog/1.6-week6/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/internship_report/vi/2-proposal/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/internship_report/2-proposal/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/internship_report/vi/2-proposal/"
                 />
   </url><url>
     <loc>http://localhost:1313/internship_report/vi/5-workshop/5.2-prerequiste/</loc>
