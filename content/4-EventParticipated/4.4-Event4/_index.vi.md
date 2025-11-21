@@ -1,112 +1,90 @@
 ---
-title: "Tái định hình DevOps với AWS Generative AI"
+title: "Generative AI với Amazon Bedrock"
 date: "`r Sys.Date()`"
-weight: 1
+weight: 4
 chapter: false
-pre: " <b> 4.3. </b> "
+pre: " <b> 4.4. </b> "
 ---
 
-
-
-# Báo cáo Tóm tắt
+# Bài thu hoạch
 
 ### Mục tiêu Sự kiện
 
-- Chia sẻ bối cảnh hiện tại của DevOps và tác động của Generative AI.
-- Trình bày các case study thực tế và framework triển khai AI vào DevOps.
-- Cung cấp live demo về các công cụ AWS Generative AI giúp tăng cường development lifecycle.
-- Thảo luận vai trò đang thay đổi của DevOps engineers và các kỹ năng cần có trong tương lai.
+- Cung cấp một lộ trình chiến lược về Generative AI, từ các nguyên lý nền tảng của Large Language Models đến nghệ thuật nâng cao của Prompt Engineering.
+- Khai mở sức mạnh của Retrieval Augmented Generation (RAG) để xây dựng AI được neo (grounded) vào dữ liệu riêng, cập nhật theo thời gian thực.
+- Giới thiệu bước tiến hóa tiếp theo của AI: các Autonomous, goal‑oriented Agents có khả năng reasoning và hành động.
+- Ra mắt **Amazon Bedrock AgentCore**, một nền tảng toàn diện được thiết kế để thu hẹp khoảng cách giữa các AI prototype và hệ thống production vừa bảo mật vừa có khả năng mở rộng.
 
 ### Diễn giả
 
-- **Lê Thanh Đức** – Cloud Delivery Manager, CMC Global
-- **Dư Quốc Thành** – Technical Leader, CMC Global
-- **Văn Hoàng Kha** – Cloud Engineer, AWS Community Builder
+- **Lâm Tuấn Kiệt** – Sr. DevOps Engineer, FPT Software
+- **Danh Hoàng Hiếu Nghị** – AI Engineer, Renova Cloud
+- **Đinh Lê Hoàng Anh** – Cloud Engineer Trainee, First Cloud AI Journey
 
-### Những điểm nhấn chính
+### Những Điểm Nhấn Chính
 
-#### Tiến hóa từ DevOps đến DevSecOps
+#### Cái Nhìn Thoáng Qua về Tương Lai
 
-- Tư duy DevOps hiện đại tích hợp security ngay từ đầu, biến nó thành trách nhiệm chung giữa development, security và operations.
-- Chuyển từ security kiểu phản ứng sau phát triển sang cách tiếp cận chủ động, nơi security được nhúng trong mọi phase.
-- Sự chuyển đổi văn hóa này là cốt lõi của DevSecOps, nhằm cân bằng tốc độ phát triển với bảo mật hệ thống.
+*"The journey of AI is an evolution in autonomy."* – “Hành trình của AI là sự tiến hóa trong mức độ tự chủ.” Chủ đề trung tâm này định hình toàn bộ workshop, vẽ nên lộ trình từ các AI assistant đơn giản chỉ làm theo luật đến các hệ thống Agentic AI hoàn toàn tự chủ có thể reasoning, lên kế hoạch và thực thi các workflow phức tạp với rất ít sự can thiệp của con người.
 
-#### Các Giai đoạn của Secure DevOps Lifecycle
+#### Phần 1: Nắm Vững Nền Tảng với Amazon Bedrock
 
-Một cách tiếp cận 7 giai đoạn để nhúng security xuyên suốt pipeline:
+- **The Foundation Model Revolution:** Phiên chia sẻ bắt đầu bằng việc so sánh các mô hình Machine Learning truyền thống với **Foundation Models (FMs)** – các mô hình tổng quát, đa dụng. Amazon Bedrock được giới thiệu như cổng vào an toàn để truy cập danh mục đa dạng các Foundation Model tiên tiến.
+- **The Art of the Prompt:** Prompt Engineering được phân tích như kỹ năng giao tiếp hiệu quả với AI. Phiên chia sẻ bao quát một dải kỹ thuật từ **Zero‑Shot**, **Few‑Shot** đến **Chain‑of‑Thought** prompting nâng cao.
+- **Retrieval Augmented Generation (RAG): Grounding AI in Reality:** RAG được trình bày như công nghệ then chốt cho Enterprise AI. Bằng cách sử dụng **Embedding Models** như Amazon Titan để chuyển đổi dữ liệu riêng thành vector representation, RAG cho phép AI truy xuất thông tin liên quan, cập nhật *trước khi* sinh câu trả lời, từ đó giảm hallucination và tinh chỉnh phản hồi cho từng bối cảnh business cụ thể.
 
-- **Plan**: Xác định security requirements và thực hiện threat modeling.
-- **Code**: Dùng static analysis (SAST) để phát hiện vulnerabilities sớm.
-- **Build**: Tự động hóa security checks, dependency scans và configuration validation.
-- **Test**: Tích hợp penetration testing và compliance auditing.
-- **Deploy**: Scan Infrastructure as Code (IaC) để đảm bảo môi trường an toàn.
-- **Operate**: Tự động hóa patching, incident response và remediation.
-- **Monitor**: Sử dụng real-time analytics và AI-powered anomaly detection để phòng thủ chủ động.
+#### Phần 2: Tiến Hóa Thành Autonomous Agents
 
-#### Khai thác AI trong DevOps Toolchain
+- **Bridging the Prototype‑to‑Production Chasm:** Các diễn giả chỉ ra những rào cản quan trọng ngăn các AI prototype đầy hứa hẹn trở thành công cụ business thực sự có giá trị: **Performance, Scalability, Security và Governance.**
+- **The Rise of Agentic AI:** Workshop sau đó chuyển trọng tâm sang tương lai: AI Agents. Đây không chỉ là chatbots; chúng là những hệ thống được thiết kế để đạt được mục tiêu cụ thể bằng cách tự động hóa cả workflow, tận dụng các open‑source framework như **LangChain, LlamaIndex và Crew.AI**.
 
-- **Automation**: AI tự động hóa các tác vụ lặp lại như code review, log analysis, vulnerability scanning và lọc false positives.
-- **Enhanced Security**: Công cụ AI-driven có thể ưu tiên rủi ro trọng yếu, gợi ý cách fix và phát hiện hành vi bất thường trong runtime environments.
-- **Efficiency**: AI hỗ trợ tạo documentation, reports và compliance policies, giảm tải thủ công.
-- **Tooling Examples**: Phiên chia sẻ nêu các tools như SonarQube, Checkov, Prometheus và GitHub Actions, cùng vai trò của AI trong việc tăng cường khả năng của chúng.
+#### Phần 3: Giới Thiệu Amazon Bedrock AgentCore
 
-#### Công cụ AWS cho AI-Enhanced DevOps
+- **The Production‑Ready Platform for Agents:** Điểm nhấn của sự kiện là phần giới thiệu **Amazon Bedrock AgentCore**, một nền tảng toàn diện được thiết kế để giải quyết “khoảng cách lên production”. AgentCore cung cấp đầy đủ các dịch vụ nền tảng cần thiết để vận hành agents một cách bảo mật và có khả năng scale:
+    - **Runtime & Identity:** Thực thi và quản lý hoạt động của agent một cách an toàn.
+    - **Memory:** Cung cấp cho agents khả năng ghi nhớ ngữ cảnh để tương tác mạch lạc.
+    - **Tools:** Trang bị cho agents các công cụ như **Browser Tool** (truy cập dữ liệu web theo thời gian thực) và **Code Interpreter** (thực hiện tính toán, chạy code).
+    - **Gateway:** Cổng vào bảo mật để agents tương tác với các company API.
+    - **Observability:** Cung cấp cái nhìn sâu về hiệu năng, chi phí và hành vi của agent trong vận hành.
 
-- **Amazon CodeGuru**: Dịch vụ demo để scan code tìm vulnerabilities (ví dụ: SQL injection, secret leaks) và đưa ra actionable recommendations để fix.
-- **AWS Managed Control Plane (MCP) & Base (MCB)**: Công cụ tự động hóa security compliance và updates cho Terraform và Kubernetes (EKS) configurations.
-- **Cost Optimization**: Các dịch vụ AI/ML như AWS Cost Anomaly Detection và Compute Optimizer giúp dự đoán nhu cầu tài nguyên và giảm lãng phí.
+### Từ Lý Thuyết đến Thực Tiễn: Live Demo và Code Blueprint
 
-### Bài học Chính
+Workshop không dừng lại ở lý thuyết mà gắn mọi khái niệm với phần thực hành, demo code cụ thể, tham chiếu đến hai GitHub repository chính làm tài nguyên cực kỳ giá trị cho người tham dự.
 
-#### Tư duy Bảo mật
+#### The Foundational Cookbook: `aws-samples/amazon-bedrock-samples`
 
-- **Proactive Integration**: Luôn bắt đầu với security, nhúng nó vào giai đoạn sớm nhất của planning và development, không phải thêm vào sau.
-- **Shared Responsibility**: Xây dựng văn hóa nơi developers, operations và security cùng chịu trách nhiệm về security.
-- **Continuous Improvement**: Dùng feedback loops từ monitoring và incidents để liên tục cải thiện quy trình bảo mật.
+Official AWS repository này được giới thiệu như một “cookbook” không thể thiếu để làm chủ các thành phần cốt lõi của Bedrock. Các demo cho thấy bộ sưu tập Jupyter Notebook và code sample này đóng vai trò như một “flight simulator” cho việc phát triển AI, cho phép kỹ sư:
 
-#### Kiến trúc Kỹ thuật
+- **Experiment with Prompting:** Thử nghiệm hàng loạt ví dụ về Zero‑Shot, Few‑Shot và Chain‑of‑Thought prompting trên nhiều model khác nhau như Claude và Llama.
+- **Build a RAG Pipeline from Scratch:** Các hướng dẫn từng bước minh họa cách sử dụng Amazon Titan để tạo embeddings, lưu trữ trong vector database và xây dựng một RAG pipeline hoàn chỉnh cho bài toán Q&A trên tài liệu riêng.
+- **Master the APIs:** Cung cấp các code snippet rõ ràng, có thể tái sử dụng để tương tác với hầu hết mọi tính năng của dịch vụ Bedrock, từ text generation đến image creation.
 
-- **Automated Security Pipeline**: Nhúng automated security checks ở mọi stage của CI/CD pipeline, từ code scanning đến deployment.
-- **Observability**: Triển khai monitoring, logging và alerting mạnh (ví dụ: Prometheus, Grafana, Loki) để có real-time insights về sức khỏe và bảo mật hệ thống.
-- **IaC Security**: Sử dụng công cụ scan IaC configurations để ngăn misconfigurations trước khi lên production.
+#### The Capstone Project: `ihatesea69/Bedrock_AgentCore`
 
-#### Chiến lược Tích hợp AI
+Repository này đóng vai trò như bài demo “capstone project”, minh họa cách lắp ghép các thành phần riêng lẻ từ “cookbook” thành một AI Agent phức tạp, hoạt động thực tế dựa trên nền tảng AgentCore mới. Phần live demo đi qua repository này để trình diễn cách:
 
-- **Phased Approach**: Lựa chọn và áp dụng AI tools phù hợp nhu cầu dự án để tránh overhead và độ phức tạp không cần thiết.
-- **Human-in-the-Loop**: Xem AI như trợ lý mạnh mẽ để tăng cường năng lực con người, không phải thay thế. Sự giám sát và phán đoán của con người vẫn là then chốt.
-- **Measure ROI**: Đo lường hiệu quả tích hợp AI qua tốc độ phát triển, cải thiện security posture và giảm nỗ lực thủ công.
+- **Define an Agent:** Định nghĩa identity, instructions và goals của agent trong code.
+- **Equip the Agent with Tools:** Cấp cho agent khả năng thực hiện các hành động vượt ra ngoài việc sinh text, như gọi external APIs hoặc chạy code.
+- **Orchestrate a Mission:** Kết nối tất cả trong một ví dụ live, nơi agent nhận một yêu cầu phức tạp, tự chủ chọn đúng tools, truy xuất thông tin cần thiết và thực thi một kế hoạch nhiều bước để đạt được mục tiêu. Điều này khiến khái niệm trừu tượng về “Agentic AI” trở nên cụ thể và khả thi.
 
-### Ứng dụng vào Công việc
+### Những Điều Rút Ra Chính (Key Takeaways)
 
-- **Nâng cấp CI/CD**: Tích hợp SAST và dependency scanning tự động vào pipeline hiện tại.
-- **Áp dụng IaC Scanning**: Dùng công cụ như Checkov để validate Terraform hoặc các IaC scripts khác.
-- **Pilot AWS AI Tools**: Thử nghiệm Amazon CodeGuru trên một dự án nhỏ để review code quality và security.
-- **Cải thiện Monitoring**: Tận dụng AI-powered anomaly detection để nhận cảnh báo chủ động về vấn đề tiềm ẩn.
-- **Tự động hóa Tài liệu**: Dùng AI hỗ trợ tạo và duy trì project documentation và reports.
+#### Blueprint Khởi Động Nhanh: Ứng Dụng vào Công Việc
 
-### Trải nghiệm Sự kiện
+1. **Xây dựng một RAG‑powered Expert:** Clone repository `amazon-bedrock-samples` và tùy biến các RAG notebook để kết nối với internal documentation của bạn, tạo nên một internal search engine mạnh, có ngữ cảnh.
+2. **Prototype Agent Đầu Tiên của Bạn:** Sử dụng repository `Bedrock_AgentCore` như template. Định nghĩa một agent đơn giản tự động hóa một business process nhiều bước đặc thù của team, ví dụ: tạo daily sales report bằng cách gọi internal API rồi tóm tắt kết quả.
+3. **Refine Prompts với Cookbook:** Lấy một AI workflow sẵn có và sử dụng các ví dụ đa dạng trong repository `amazon-bedrock-samples` để nâng cấp prompts từ chỉ dẫn đơn giản lên Few‑Shot tinh tế, cải thiện đáng kể chất lượng output.
+4. **Khám Phá AgentCore Tools:** Tìm hiểu cách các công cụ trong Bedrock AgentCore, như Browser Tool hoặc Code Interpreter, có thể giải quyết các bài toán business cần dữ liệu thời gian thực hoặc tính toán động.
 
-Tham dự buổi "Reinventing DevOps with AWS Generative AI" rất giá trị, cung cấp cái nhìn toàn diện về cách AI đang tái định hình bảo mật và hiệu suất trong phát triển phần mềm. Một số trải nghiệm chính:
+### Trải Nghiệm Sự Kiện
 
-#### Học hỏi từ các diễn giả giàu kinh nghiệm
-- Các chuyên gia từ CMC Global và AWS Vietnam chia sẻ hiểu biết sâu sắc từ kinh nghiệm rộng về cloud và DevOps.
-- Qua các case study thực tế từ khách hàng ở Philippines và Singapore, tôi hiểu rõ hơn cách triển khai secure CI/CD pipelines.
+Workshop là một hành trình hấp dẫn xuyên suốt bức tranh toàn diện của AI hiện đại. Việc đính kèm các GitHub repository chi tiết đã biến buổi học từ mang tính lý thuyết thành một “actionable masterclass”. Người tham dự không chỉ mang về kiến thức mà còn có cả code blueprint cụ thể để bắt đầu xây dựng thế hệ ứng dụng AI‑driven tiếp theo ngay lập tức. Việc giới thiệu Amazon Bedrock AgentCore, đi kèm demo thực tế, mang lại một roadmap rõ ràng, thuyết phục để vượt qua giai đoạn AI prototype, hướng tới các Enterprise Agent bảo mật, có khả năng mở rộng và thực sự tự chủ.
 
-#### Trải nghiệm kỹ thuật hands-on
-- Live demo của Amazon CodeGuru đặc biệt ấn tượng, cho thấy cách AI có thể xác định vulnerabilities và gợi ý code fixes theo thời gian thực.
+#### Một số hình ảnh sự kiện
 
-#### Tận dụng công cụ hiện đại
-- Khám phá DevOps toolchain hiện đại gồm SonarQube, Checkov, Prometheus và GitLab CI, và hiểu cách AI tích hợp cùng chúng.
-- Học cách dùng AI cho infrastructure management và compliance với các công cụ như AWS MCP và MCB.
-
-#### Kết nối và thảo luận
-- Phiên Q&A tương tác cho phép đào sâu các chủ đề như tiến hóa vai trò DevOps, giới hạn của AI và định hướng nghề nghiệp cho cloud architects.
-- Các thảo luận củng cố tầm quan trọng của việc cân bằng giữa AI automation và chuyên môn con người cùng tư duy phản biện.
-
-#### Bài học rút ra
-- Dịch chuyển sang văn hóa DevSecOps là thiết yếu để xây dựng ứng dụng an toàn và tin cậy với tốc độ cao.
-- Công cụ AI như Amazon CodeGuru có thể tăng mạnh năng suất và bảo mật, nhưng vẫn cần human oversight để xác minh và áp dụng đề xuất hiệu quả.
-- Hiện đại hóa cần chiến lược rõ ràng; tiếp cận theo phases khi áp dụng công cụ và quy trình mới sẽ ít rủi ro và hiệu quả hơn.
-
-
-> Tổng thể, sự kiện không chỉ mang lại kiến thức kỹ thuật mà còn tái định hình tư duy của tôi về tương lai DevOps, vai trò không thể thiếu của bảo mật tích hợp, và tiềm năng hợp tác giữa AI và kỹ sư con người.
+{{< image-grid >}}
+<img src="/images/event4.1.jpeg" alt="Hình ảnh sự kiện 1">
+<img src="/images/event4.2.jpeg" alt="Hình ảnh sự kiện 2">
+<img src="/images/event4.3.jpeg" alt="Hình ảnh sự kiện 3">
+<img src="/images/event4.4.jpeg" alt="Hình ảnh sự kiện 4">
+{{< /image-grid >}}

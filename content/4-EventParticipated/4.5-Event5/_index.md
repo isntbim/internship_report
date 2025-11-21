@@ -6,8 +6,6 @@ chapter: false
 pre: " <b> 4.5. </b> "
 ---
 
-
-
 # Summary Report
 
 ### Event Objectives
@@ -25,6 +23,9 @@ pre: " <b> 4.5. </b> "
 - **Thinh Nguyen** - AWS Community Builder
 - **Vi Tran** - AWS Community Builder
 - **Van Hoang Kha** – Cloud Engineer, AWS Community Builder
+- **Long Huynh** - AWS Community Builder
+- **Quy Pham** - AWS Community Builder
+- **Nghiem Le** - AWS Community Builder
 
 ### Key Highlights
 

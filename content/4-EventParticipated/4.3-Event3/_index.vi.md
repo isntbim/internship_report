@@ -1,14 +1,14 @@
 ---
 title: "Tái định hình DevOps với AWS Generative AI"
 date: "`r Sys.Date()`"
-weight: 1
+weight: 3
 chapter: false
 pre: " <b> 4.3. </b> "
 ---
 
 
 
-# Báo cáo Tóm tắt
+# Bài thu hoạch
 
 ### Mục tiêu Sự kiện
 
