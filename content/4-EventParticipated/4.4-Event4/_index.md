@@ -82,11 +82,9 @@ This workshop was a fascinating journey through the entire landscape of modern A
 
 #### Some event photos
 
-<div style="display: flex; gap: 10px;">
-  <img src="/images/event4pic1.jpeg" alt="Event Photo 1" style="width: 50%;">
-  <img src="/images/event4pic2.jpeg" alt="Event Photo 2" style="width: 50%;">
-</div>
-<div style="display: flex; gap: 10px;">
-  <img src="/images/event4pic3.jpeg" alt="Event Photo 3" style="width: 50%;">
-  <img src="/images/event4pic4.jpeg" alt="Event Photo 4" style="width: 50%;">
-</div>
+{{< image-grid >}}
+<img src="/images/event4.1.jpeg" alt="Event Photo 1">
+<img src="/images/event4.2.jpeg" alt="Event Photo 2">
+<img src="/images/event4.3.jpeg" alt="Event Photo 3">
+<img src="/images/event4.4.jpeg" alt="Event Photo 4">
+{{< /image-grid >}}

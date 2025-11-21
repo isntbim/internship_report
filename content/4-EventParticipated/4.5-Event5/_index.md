@@ -20,6 +20,7 @@ pre: " <b> 4.5. </b> "
 
 ### Speakers
 
+- **Truong Quang Tinh** - Platform Engineer (TymeX), AWS Community Builder
 - **Bao Huynh** - AWS Community Builder
 - **Thinh Nguyen** - AWS Community Builder
 - **Vi Tran** - AWS Community Builder
@@ -110,12 +111,9 @@ Attending the "DevOps on AWS" workshop was extremely valuable, offering a compre
 - Effective monitoring and observability are not optional; they are critical for operating reliable and performant applications in the cloud.
 
 #### Some event photos
-
-<div style="display: flex; gap: 10px;">
-  <img src="/images/event5pic2.jpeg" alt="Event Photo 1" style="width: 50%;">
-  <img src="/images/event5pic4.jpeg" alt="Event Photo 2" style="width: 50%;">
-</div>
-<div style="display: flex; gap: 10px;">
-  <img src="/images/event5pic3.jpeg" alt="Event Photo 3" style="width: 50%;">
-  <img src="/images/event5pic1.jpeg" alt="Event Photo 4" style="width: 50%;">
-</div>
+{{< image-grid >}}
+<img src="/images/event5.2.jpeg" alt="Event Photo 1">
+<img src="/images/event5.4.jpeg" alt="Event Photo 2">
+<img src="/images/event5.3.jpeg" alt="Event Photo 3">
+<img src="/images/event5.1.jpeg" alt="Event Photo 4">
+{{< /image-grid >}}
