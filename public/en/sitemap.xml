@@ -196,6 +196,42 @@
                 href="http://localhost:1313/internship_report/1-worklog/1.6-week6/"
                 />
   </url><url>
+    <loc>http://localhost:1313/internship_report/1-worklog/1.7-week7/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/internship_report/vi/1-worklog/1.7-week7/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/internship_report/1-worklog/1.7-week7/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/internship_report/1-worklog/1.8-week8/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/internship_report/vi/1-worklog/1.8-week8/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/internship_report/1-worklog/1.8-week8/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/internship_report/1-worklog/1.9-week9/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/internship_report/vi/1-worklog/1.9-week9/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/internship_report/1-worklog/1.9-week9/"
+                />
+  </url><url>
     <loc>http://localhost:1313/internship_report/5-workshop/5.4-s3-onprem/5.4.2-create-interface-enpoint/</loc>
     <xhtml:link
                 rel="alternate"
@@ -230,6 +266,30 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/internship_report/5-workshop/5.3-s3-vpc/5.3.2-test-gwe/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/internship_report/1-worklog/1.10-week10/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/internship_report/vi/1-worklog/1.10-week10/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/internship_report/1-worklog/1.10-week10/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/internship_report/1-worklog/1.11-week11/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/internship_report/vi/1-worklog/1.11-week11/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/internship_report/1-worklog/1.11-week11/"
                 />
   </url><url>
     <loc>http://localhost:1313/internship_report/5-workshop/5.3-s3-vpc/</loc>
