@@ -1,7 +1,7 @@
 ---
 title: "Reinventing DevOps with AWS Generative AI"
 date: "`r Sys.Date()`"
-weight: 1
+weight: 3
 chapter: false
 pre: " <b> 4.3. </b> "
 ---
@@ -19,9 +19,9 @@ pre: " <b> 4.3. </b> "
 
 ### Speakers
 
-- **Lê Thanh Đức** – Cloud Delivery Manager, CMC Global
-- **Dư Quốc Thành** – Technical Leader, CMC Global
-- **Văn Hoàng Kha** – Cloud Engineer, AWS Community Builder
+- **Le Thanh Duc** – Cloud Delivery Manager, CMC Global
+- **Du Quoc Thanh** – Technical Leader, CMC Global
+- **Van Hoang Kha** – Cloud Engineer, AWS Community Builder
 
 ### Key Highlights
 
