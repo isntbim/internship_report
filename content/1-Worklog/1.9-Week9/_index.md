@@ -1,7 +1,7 @@
 ---
 title: "Week 9 Worklog"
 date: "r Sys.Date()"
-weight: 1
+weight: 9
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
@@ -10,8 +10,11 @@ pre: " <b> 1.9. </b> "
 
 ### Week 9 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Design and integrate conversational and event-driven components using Amazon Lex and Amazon SNS.
+* Work with managed data and caching services such as DynamoDB and ElastiCache, and automate deployments for EKS-based workloads.
+* Apply governance and scalability practices through Service Quotas, IAM-based usage controls, and EKS Blueprints.
+* Build and operate serverless and containerized applications, and evaluate storage performance across S3 and EFS.
+* Implement S3 security controls and build a basic data lake pipeline using Glue, Athena, and QuickSight.
 
 ### Tasks carried out this week:
 | Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
@@ -25,31 +28,28 @@ pre: " <b> 1.9. </b> "
 
 ### Week 9 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Designed conversational and messaging workflows by configuring an Amazon Lex chatbot, wiring Lambda for fulfillment, and implementing a publish/subscribe model with Amazon SNS and multiple subscriber services.
 
-* Successfully created and configured an AWS Free Tier account.
+* Worked with managed data and cache services:
+  * Practiced core DynamoDB operations, Global Secondary Indexes, CloudShell table management, and Python-based interactions.
+  * Created and connected to ElastiCache for Redis clusters, using the SDK to perform operations such as strings, hashes, publish/subscribe, and streams.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Automated Kubernetes-based deployments by provisioning EKS clusters, configuring IAM roles, and building CI/CD pipelines with CodePipeline and CodeBuild to deploy sample applications from source changes.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Applied governance and quota management:
+  * Reviewed and adjusted AWS Service Quotas for capacity needs.
+  * Implemented IAM policies to control resource usage by Region, EC2 instance family/size, and EBS volume types.
 
-* Used AWS CLI to perform basic operations such as:
+* Used EKS Blueprints and Infrastructure as Code to prepare networking, configure cluster roles, manage team access, and deploy add-ons like Cluster Autoscaler and workloads via ArgoCD.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* Built and evaluated application architectures:
+  * Developed a serverless web application using Lambda, API Gateway, DynamoDB, Amplify, and CodeCommit, including ride time handling and photo processing flows.
+  * Transitioned a monolithic application to microservices with Docker and AWS Fargate, fronted by an Application Load Balancer and ECS services.
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Analyzed storage performance on AWS by testing S3 throughput and sync patterns, exploring small-file operations, and tuning EFS IOPS, I/O size, sync frequency, and multi-threading impact.
+
+* Strengthened S3 security posture:
+  * Enforced HTTPS and SSE-S3 encryption, blocked public access via ACLs and Block Public Access, and restricted traffic to an S3 VPC Endpoint.
+  * Used AWS Config and Access Analyzer to detect and review potentially public or misconfigured buckets.
+
+* Built a simple data lake workflow by staging data in S3, transforming it with DataBrew and Glue into Parquet, querying with Athena, and creating visualizations in QuickSight.

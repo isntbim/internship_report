@@ -1,7 +1,7 @@
 ---
 title: "Week 7 Worklog"
 date: "r Sys.Date()"
-weight: 1
+weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
@@ -10,8 +10,12 @@ pre: " <b> 1.7. </b> "
 
 ### Week 7 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Deepen practical skills with Amazon DynamoDB, including core operations, advanced design patterns, and global architectures.
+* Configure identity federation, IAM roles, and cost optimization strategies across AWS and Azure AD.
+* Deploy and manage applications using Lightsail, containers, Step Functions, and IAM roles for secure access.
+* Use Cloud9, Elastic Beanstalk, and CI/CD tools to deploy and automate application delivery pipelines.
+* Strengthen AWS security posture with foundational IAM practices, detective controls, incident response, and infrastructure protection.
+* Build and automate microservices-based architectures using Lambda, DynamoDB, Step Functions, and CodeStar.
 
 ### Tasks carried out this week:
 | Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
@@ -25,31 +29,26 @@ pre: " <b> 1.7. </b> "
 
 ### Week 7 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Gained hands-on experience with Amazon DynamoDB by creating tables, loading data, working with GSIs and composite keys, and enabling backups and change data capture with Streams and Kinesis.
 
-* Successfully created and configured an AWS Free Tier account.
+* Applied cost and analytics practices using DynamoDB performance analysis and AWS Glue + Athena to review cost and usage data and experiment with tagging for allocation.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Configured identity federation and IAM governance:
+  * Set up Azure AD federation to AWS, synced IAM roles, and tested federated console access.
+  * Created IAM groups, users, and roles with conditions such as IP address and time-based restrictions.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Optimized AWS cost and database migrations by reviewing Savings Plans and Reserved Instances, and practicing schema conversion and data migration with AWS SCT and DMS, including monitoring and Serverless options.
 
-* Used AWS CLI to perform basic operations such as:
+* Deployed and managed applications on Lightsail and containers by running WordPress, Prestashop, Akaunting, and Lightsail container services, including snapshots, alarms, and Docker-based custom images.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* Orchestrated workflows and application access:
+  * Built workflows with AWS Step Functions using Task, Choice, Wait, Retry/Catch, and Parallel states.
+  * Compared IAM access keys with IAM roles and attached an EC2 role for secure S3 access.
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Used Cloud9 and Elastic Beanstalk for application lifecycle, from creating a Cloud9 environment and running CLI tasks to deploying and updating a monolithic app on Elastic Beanstalk and wiring a release pipeline with CodeStar, CodeCommit, and CodeDeploy.
+
+* Strengthened account and organizational security:
+  * Reviewed root account protection, MFA, and a dedicated IAM admin user and group.
+  * Defined password policies, explored SCPs, and used IAM Access Analyzer and last-accessed data to refine permissions.
+
+* Built and refined microservices and security controls by creating Lambda-based microservices with DynamoDB and Step Functions, automating deployment with CodeStar, and deploying GuardDuty, Security Hub, Detective, and multiple network/data protection services (VPC design, Network Firewall, WAF, Shield Advanced, Macie, KMS, ACM, Secrets Manager).

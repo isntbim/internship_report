@@ -1,7 +1,7 @@
 ---
 title: "Week 8 Worklog"
-date: "r Sys.Date()"
-weight: 1
+date: "`r Sys.Date()`"
+weight: 8
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
@@ -10,8 +10,11 @@ pre: " <b> 1.8. </b> "
 
 ### Week 8 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Apply Infrastructure as Code with AWS CloudFormation to deploy, evolve, and scale application infrastructure.
+* Improve application reliability through resiliency testing, Auto Scaling, and automated recovery mechanisms.
+* Build and secure modern application patterns, including serverless SPAs with authentication and performance tracing.
+* Explore AI, storage, and content delivery services such as Amazon Polly, Rekognition, Lex, S3, and CloudFront.
+* Monitor workloads using CloudWatch dashboards across different operating systems and prepare for assessment.
 
 ### Tasks carried out this week:
 | Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
@@ -24,31 +27,25 @@ pre: " <b> 1.8. </b> "
 
 ### Week 8 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Practiced Infrastructure as Code with CloudFormation by deploying a foundational VPC, multi-tier web stack, and iteratively evolving the stack with additional resources such as S3 buckets, EC2 instances, and multi-region deployments.
 
-* Successfully created and configured an AWS Free Tier account.
+* Improved understanding of resiliency and scaling:
+  * Used AWS Fault Injection Simulator to design and run experiments that injected faults and observed application behavior.
+  * Configured Auto Scaling groups, launch templates, and load balancers to handle load changes and recover from failures, including automated instance replacement based on health checks.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Refactored and extended application architectures:
+  * Broke down a monolithic application into multiple microservices (Advert, Invoice, ShoppingCart, Order, User, Static) and validated end-to-end functionality.
+  * Built and deployed a serverless Single Page Application backed by API Gateway, Lambda, and DynamoDB, with a CI/CD pipeline using CodeStar.
+  * Added authentication and authorization with Amazon Cognito and integrated AWS X-Ray to trace requests and analyze performance.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Explored AI and content services:
+  * Integrated Amazon Polly for text-to-speech through the console, CLI, and SDK.
+  * Used Amazon Rekognition for image object detection and basic facial recognition scenarios.
+  * Implemented a chatbot with Amazon Lex, including deployment, enhancement, Lambda-based fulfillment, and publishing.
+  * Hosted a static website on S3, secured it with appropriate access settings, and accelerated delivery with CloudFront; practiced S3 features like versioning and cross-region replication.
 
-* Used AWS CLI to perform basic operations such as:
+* Enhanced monitoring and observability skills:
+  * Built CloudWatch dashboards with metric widgets and Logs Insights to visualize application and infrastructure health.
+  * Monitored both Windows and Linux EC2 instances by tracking CPU, network, and other key metrics under synthetic load.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Completed the scheduled assessment for the week and consolidated knowledge from reliability, serverless, AI services, and monitoring topics.
