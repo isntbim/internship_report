@@ -1,7 +1,7 @@
 ---
 title: "Worklog Tuần 8"
-date: "2025-10-27"
-weight: 1
+date: "`r Sys.Date()`"
+weight: 8
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
@@ -10,48 +10,42 @@ pre: " <b> 1.8. </b> "
 
 ### Mục tiêu tuần 8:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Áp dụng Infrastructure as Code với AWS CloudFormation để deploy, phát triển (evolve) và scale hạ tầng ứng dụng.
+* Cải thiện độ tin cậy (reliability) của ứng dụng thông qua resiliency testing, Auto Scaling và các cơ chế tự động khôi phục (automated recovery mechanisms).
+* Xây dựng và bảo mật các mô hình ứng dụng hiện đại, bao gồm serverless SPA với authentication và performance tracing.
+* Khám phá các dịch vụ AI, lưu trữ và phân phối nội dung như Amazon Polly, Rekognition, Lex, S3 và CloudFront.
+* Giám sát workloads bằng CloudWatch dashboards trên nhiều hệ điều hành khác nhau và chuẩn bị cho buổi đánh giá (assessment).
 
 ### Các công việc thực hiện trong tuần:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --------- | ------------ |-----------------| -------------- |
+| 2   | - **Triển khai Infrastructure as Code với AWS CloudFormation** <br>&emsp; + Deploy một VPC nền tảng (foundational VPC) và hạ tầng networking bằng CloudFormation template <br>&emsp; + Launch một multi-tier web application stack vào VPC đã tạo bằng một CloudFormation template khác <br>&emsp; + Khám phá kiến trúc của web application đang chạy, bao gồm load balancer, auto-scaling group và các EC2 instances <br>&emsp; + Phân tích resources, outputs và template của CloudFormation stack để hiểu cách hạ tầng được provision <br><br> - **Triển khai Advanced Health Checks và Dependency Management** <br>&emsp; + Deploy một web application stack bằng CloudFormation template để làm baseline <br>&emsp; + Phân tích hành vi ứng dụng bằng cách mô phỏng lỗi dependency (dependency failure) và quan sát tác động <br>&emsp; + Cấu hình deep health check cho load balancer để phản ánh chính xác tình trạng (true health) của ứng dụng <br>&emsp; + Điều chỉnh hệ thống để triển khai cơ chế "fail open", cho phép ứng dụng vẫn duy trì một phần chức năng khi dependency bị outage <br><br> - **Quản lý sự phát triển của hạ tầng với AWS CloudFormation** <br>&emsp; + Deploy một baseline infrastructure stack và tìm hiểu các resources đã được tạo <br>&emsp; + Cập nhật stack đang chạy bằng cách chỉnh sửa CloudFormation parameters <br>&emsp; + Phát triển (evolve) hạ tầng bằng cách thêm một S3 bucket vào CloudFormation template <br>&emsp; + Tiếp tục chỉnh sửa stack bằng cách thêm một EC2 instance mới với cấu hình cụ thể <br>&emsp; + Thực hiện multi-region deployment bằng cách launch cùng một CloudFormation stack ở một AWS region khác <br><br> - **Refactor Monolithic Application sang Microservices** <br>&emsp; + Chuẩn bị môi trường development và kết nối tới Windows instance <br>&emsp; + Phân tích cấu trúc và dependencies của monolithic application hiện tại <br>&emsp; + Tạo và deploy microservice "Advert" <br>&emsp; + Tạo và deploy microservice "Invoice" <br>&emsp; + Tạo và deploy microservice "ShoppingCart" <br>&emsp; + Tạo và deploy microservice "Order" <br>&emsp; + Tạo và deploy microservice "User" <br>&emsp; + Tách (offload) static content bằng cách tạo và deploy microservice "Static" <br>&emsp; + Test tổng thể (end-to-end) giải pháp microservices mới sau khi refactor | 27/10/2025 | 27/10/2025 | AWS Well-Architected Reliability Workshop: <br> <https://catalog.workshops.aws/well-architected-reliability> <br> Refactoring to Microservices: <br> <https://000054.awsstudygroup.com/> |
+| 3   | - **Thực hiện Resiliency Testing với AWS Fault Injection Simulator** <br>&emsp; + Tạo IAM role và policy mới để cấp quyền cho AWS FIS inject faults <br>&emsp; + Định nghĩa và tạo một experiment template trong AWS FIS để target các resources cụ thể <br>&emsp; + Chạy fault injection experiment và quan sát tác động lên ứng dụng <br>&emsp; + Phân tích output và logs của experiment để hiểu phản ứng của hệ thống <br><br> - **Cấu hình Auto Scaling để xử lý tải và khôi phục sau lỗi** <br>&emsp; + Thiết lập launch template cho EC2 instances trong web server tier <br>&emsp; + Tạo target group cho Application Load Balancer <br>&emsp; + Cấu hình một Auto Scaling group để quản lý web server instances <br>&emsp; + Deploy một load testing application để tạo traffic và test khả năng scaling <br>&emsp; + Quan sát và xác nhận phản ứng của Auto Scaling group đối với tải mô phỏng <br><br> - **Tự động thay thế component bằng Health Checks** <br>&emsp; + Manually terminate một EC2 instance đang chạy để mô phỏng lỗi <br>&emsp; + Xác minh rằng Auto Scaling group phát hiện lỗi và launch một instance thay thế <br>&emsp; + Kiểm tra target group của Application Load Balancer để đảm bảo instance mới đã được register và ở trạng thái healthy <br><br> - **Chuẩn bị AWS Environment cho Workshop** <br>&emsp; + Tạo EC2 Key Pair mới cho việc truy cập instances <br>&emsp; + Deploy hạ tầng nền tảng bằng CloudFormation stack <br>&emsp; + Kết nối đến Windows Instance để cấu hình môi trường <br><br> - **Xây dựng và Deploy Serverless Single Page Application** <br>&emsp; + Tạo DynamoDB table để lưu trữ dữ liệu ứng dụng <br>&emsp; + Build thủ công và deploy một serverless microservice dùng AWS Lambda <br>&emsp; + Tạo và cấu hình API với Amazon API Gateway để expose microservice <br>&emsp; + Thiết lập CI/CD pipeline với AWS CodeStar để tự động deploy API <br>&emsp; + Cấu hình và deploy website Single Page Application <br>&emsp; + Phát triển client để tương tác và tiêu thụ (consume) API <br><br> - **Cấu hình Application Authentication và Authorization** <br>&emsp; + Tích hợp Amazon Cognito User Pools để thêm authentication cho SPA <br>&emsp; + Bảo vệ microservice bằng cách triển khai các kiểm tra authentication <br>&emsp; + Deploy và test toàn bộ luồng authentication và authorization <br>&emsp; + Triển khai chức năng user sign-up và sign-in <br><br> - **Phân tích hiệu năng ứng dụng với AWS X-Ray** <br>&emsp; + Tích hợp AWS X-Ray để trace requests và phát hiện bottlenecks hiệu năng | 28/10/2025 | 28/10/2025 | AWS Well-Architected Reliability Workshop: <br> <https://catalog.workshops.aws/well-architected-reliability> <br> Serverless Web Application: <br> <https://000055.awsstudygroup.com/> |
+| 4   | - **Tích hợp khả năng chuyển văn bản thành giọng nói với Amazon Polly** <br>&emsp; + Chuẩn bị môi trường và khám phá Amazon Polly console <br>&emsp; + Tạo speech và speech marks bằng AWS CLI <br>&emsp; + Sử dụng AWS Polly SDK for Java để synthesize speech <br><br> - **Thêm tính năng nhận diện đối tượng với Amazon Rekognition** <br>&emsp; + Chuẩn bị môi trường cho các tác vụ Rekognition <br>&emsp; + Detect objects trong hình ảnh bằng dịch vụ Rekognition <br>&emsp; + Thực hiện facial recognition và thử nghiệm với sample application <br><br> - **Triển khai Chatbot với Amazon Lex** <br>&emsp; + Deploy base application và APIs <br>&emsp; + Tạo và nâng cấp (enhance) Lex chatbot cho ứng dụng <br>&emsp; + Phát triển Lambda handler cho bot và cấu hình để thực hiện fulfillment <br>&emsp; + Publish Lex chatbot để sử dụng <br><br> - **Host và tăng tốc Static Website với Amazon S3 và CloudFront** <br>&emsp; + Tạo S3 bucket và nạp dữ liệu website <br>&emsp; + Bật tính năng static website hosting trên S3 bucket <br>&emsp; + Cấu hình public access blocks và object permissions <br>&emsp; + Thiết lập Amazon CloudFront distribution để tăng tốc phân phối nội dung (content delivery) <br><br> - **Quản lý các tính năng trên S3 Bucket cho Bảo vệ và Replication dữ liệu** <br>&emsp; + Bật và test bucket versioning để giữ lịch sử object <br>&emsp; + Thực hành di chuyển (move) objects trong S3 <br>&emsp; + Cấu hình multi-region object replication cho mục đích disaster recovery | 29/10/2025 | 29/10/2025 | AI Services Integration: <br> <https://000056.awsstudygroup.com/> <br> S3 and CloudFront: <br> <https://000057.awsstudygroup.com/> |
+| 5   | - **Giám sát AWS Resources bằng CloudWatch Dashboards** <br>&emsp; + Tạo CloudWatch dashboard để hiển thị (visualize) metrics <br>&emsp; + Thêm metric widgets vào dashboard để giám sát <br>&emsp; + Thêm CloudWatch Logs Insights widget vào dashboard <br><br> - **Giám sát Windows EC2 Instance với CloudWatch** <br>&emsp; + Deploy VPC và các thành phần networking liên quan <br>&emsp; + Launch và cấu hình Windows EC2 instance <br>&emsp; + Tạo custom CloudWatch dashboard cho instance <br>&emsp; + Thêm các metrics quan trọng vào dashboard <br>&emsp; + Tạo synthetic load để quan sát sự thay đổi metrics <br><br> - **Giám sát Linux EC2 Instance với CloudWatch** <br>&emsp; + Deploy VPC và các thành phần networking cần thiết <br>&emsp; + Launch Linux EC2 instance với web server <br>&emsp; + Tạo CloudWatch dashboard để giám sát <br>&emsp; + Thêm metrics CPU và network vào dashboard <br>&emsp; + Tạo load lên instance để quan sát hiệu năng | 30/10/2025 | 30/10/2025 | AWS Well-Architected Performance Efficiency Workshop: <br> <https://catalog.workshops.aws/well-architected-performance-efficiency/> |
+| 6   | - **NGÀY THI (EXAM DAY)** | 31/10/2025 | 31/10/2025 | |
 
 ### Kết quả đạt được tuần 8:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Thực hành Infrastructure as Code với CloudFormation bằng cách deploy một foundational VPC, multi-tier web stack và phát triển dần (iteratively evolve) stack với các tài nguyên bổ sung như S3 buckets, EC2 instances và multi-region deployments.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Cải thiện hiểu biết về resiliency và scaling:
+  * Sử dụng AWS Fault Injection Simulator để thiết kế và chạy các experiments inject faults, đồng thời quan sát hành vi ứng dụng.
+  * Cấu hình Auto Scaling groups, launch templates và load balancers để xử lý thay đổi tải và khôi phục sau lỗi, bao gồm việc tự động thay thế instances dựa trên health checks.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Refactor và mở rộng kiến trúc ứng dụng:
+  * Tách một monolithic application thành nhiều microservices (Advert, Invoice, ShoppingCart, Order, User, Static) và xác nhận chức năng end-to-end.
+  * Xây dựng và deploy một serverless Single Page Application sử dụng API Gateway, Lambda và DynamoDB, kết hợp CI/CD pipeline với CodeStar.
+  * Thêm authentication và authorization với Amazon Cognito và tích hợp AWS X-Ray để trace requests và phân tích hiệu năng.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Khám phá các dịch vụ AI và nội dung:
+  * Tích hợp Amazon Polly cho text-to-speech thông qua console, CLI và SDK.
+  * Sử dụng Amazon Rekognition để detect objects trong ảnh và các kịch bản facial recognition cơ bản.
+  * Triển khai chatbot với Amazon Lex, bao gồm deploy, enhance, Lambda-based fulfillment và publish.
+  * Host static website trên S3, cấu hình bảo mật truy cập phù hợp và tăng tốc phân phối bằng CloudFront; thực hành các tính năng S3 như versioning và cross-region replication.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Nâng cao kỹ năng monitoring và observability:
+  * Xây dựng CloudWatch dashboards với metric widgets và Logs Insights để hiển thị tình trạng (health) của ứng dụng và hạ tầng.
+  * Giám sát cả Windows và Linux EC2 instances bằng cách theo dõi CPU, network và các metrics quan trọng khác dưới điều kiện synthetic load.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Hoàn thành bài đánh giá (assessment) đã lên lịch cho tuần và hệ thống hóa kiến thức về reliability, serverless, AI services và monitoring.
